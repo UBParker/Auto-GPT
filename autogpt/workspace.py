@@ -44,5 +44,4 @@ def safe_path_join(base: Path, *paths: str | Path) -> Path:
         raise ValueError(
             f"Attempted to access path '{joined_path}' outside of workspace '{base}'."
         )
-
     return joined_path
